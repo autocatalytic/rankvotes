@@ -1,2 +1,0 @@
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/ken/code/rust/rankvotes/target/debug/build/typenum-4dddc3f642432522/out/consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=/Users/ken/code/rust/rankvotes/target/debug/build/typenum-4dddc3f642432522/out/op.rs
