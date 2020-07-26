@@ -1,0 +1,6 @@
+[global]
+template_dir = "static"
+#log = "debug"
+
+[global.databases.sqlite_database]
+url = "db/db.sqlite"

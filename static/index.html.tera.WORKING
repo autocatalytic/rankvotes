@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rust Live Stream Voting</title>
+  <meta name="description" content="Vote for the next Rust livestream topic!">
+  <meta name="author" content="Following Jon Gjengset, et. al.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+-->
+
+</head>
+<body>
+  <ul>
+    {% for item in items %}
+      {% if not item.done %}
+        <li>
+          <p><strong>{{ item.title }}</strong></p>
+          <p>{{ item.body }}</p>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</body>
+</html>

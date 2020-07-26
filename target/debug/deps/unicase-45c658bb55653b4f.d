@@ -1,0 +1,5 @@
+/Users/ken/code/rust/rankvotes/target/debug/deps/unicase-45c658bb55653b4f.rmeta: /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/unicase-1.4.2/src/lib.rs
+
+/Users/ken/code/rust/rankvotes/target/debug/deps/unicase-45c658bb55653b4f.d: /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/unicase-1.4.2/src/lib.rs
+
+/Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/unicase-1.4.2/src/lib.rs:

@@ -1,0 +1,15 @@
+/Users/ken/code/rust/rankvotes/target/debug/deps/cookie-dacbd22c78e38f42.rmeta: /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/lib.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/builder.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/parse.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/jar.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/delta.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/draft.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/secure/mod.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/secure/macros.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/secure/key.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/secure/private.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/secure/signed.rs
+
+/Users/ken/code/rust/rankvotes/target/debug/deps/cookie-dacbd22c78e38f42.d: /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/lib.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/builder.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/parse.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/jar.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/delta.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/draft.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/secure/mod.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/secure/macros.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/secure/key.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/secure/private.rs /Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/secure/signed.rs
+
+/Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/lib.rs:
+/Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/builder.rs:
+/Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/parse.rs:
+/Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/jar.rs:
+/Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/delta.rs:
+/Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/draft.rs:
+/Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/secure/mod.rs:
+/Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/secure/macros.rs:
+/Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/secure/key.rs:
+/Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/secure/private.rs:
+/Users/ken/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/secure/signed.rs:

@@ -1,0 +1,112 @@
+Notes
+
+Follow along in building a vote ranking system based on a Jon Gjengset Youtube video, using Rocket web server (and "framework"), Diesel middleware and SQLite. These are just dead-simple systems that are easy or have near-zero config. That said, it always takes a little work! 
+
+First step: Rocket requires "rust nightly" to work. So:
+
+$ rustup override set nightly
+
+Diesel allows you to model the underlying DB data and automatically converts to/from SQLite datatypes and Rust data bypes, and handles converting function queries into SQL. We're not using a big feature of Diesel: Migrations. Migrations allows Diesel to set up and breakdown the app database, and some other features, without manual commands.
+
+$ cd ~/code/rust
+$ mkdir others
+$ cd others
+$ git clone https://github.com/SergioBenitez/Rocket 
+$ cd ../
+$ mkdir rankvotes
+$ cd rankvotes
+$ cp -r ../others/Rocket/examples/todo/* .
+
+Edit Cargo.toml files to update dependencies, and rip out unnecessary elements
+
+Install diesel command line
+$ cargo install diesel_cli
+
+/* 
+  = note: ld: library not found for -lmysqlclient
+          clang: error: linker command failed with exit code 1 (use -v to see invocation)
+*/
+
+Looks like there's a dependency, requiring a mysql client. In linux you can use libmariadb-client for the connection. In mac I'm trying "mysql-client"
+
+$ brew install mysql-client
+
+Install spits out this message:
+/* 
+For compilers to find mysql-client you may need to set:
+  export LDFLAGS="-L/usr/local/opt/mysql-client/lib"
+  export CPPFLAGS="-I/usr/local/opt/mysql-client/include"
+*/
+
+Trying to install diesel again using these flags from the terminal running the install. Nope, that didn't work. Probably should have expected it. Shifting gears, I'm going to use the flags to ignore backends and only install the ones I need.
+
+$ cargo install --no-default-features diesel_cli --features postgres,sqlite 
+
+YES! Success
+
+Now go back and uninstalling mysql-client
+
+$ brew uninstall mysql-client
+
+Also need this, as stated in the Rocket README:
+
+/* 
+# Rocket Todo Example
+
+This example makes use of a SQLite database via `diesel` to store todo tasks. As
+a result, you'll need to have `sqlite3` and its headers installed:
+
+  * **OS X:** `brew install sqlite`
+*/
+
+Fortunately it's already installed and up to date! It's possible I installed this already a while back, working on a separate project.
+
+$ sqlite3
+SQLite version 3.24.0 2018-06-04 14:10:15
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> quit
+
+Interesting! A transient in-memory database.
+
+Then create some DDL in ./schema.sql
+
+
+INSERT INTO items (title, body) 
+VALUES ("Async SSH part 2", "Are the animals restless?");
+
+INSERT INTO items (title, body) 
+VALUES ("Tokio Zookeeper Cleanup", "Zookeeper is awesome!");
+
+INSERT INTO items (title, body) 
+VALUES ("Tokio Futures Extravaganza", "Everything you wanted to know about Tokio Futures.");
+
+
+INSERT INTO users (username) VALUES ("bob");
+INSERT INTO users (username) VALUES ("gopinder@foo.com");
+INSERT INTO users (username) VALUES ("farook@bar.com");
+INSERT INTO users (username) VALUES ("vitalik@baz.com");
+
+sqlite> select * from users;
+1|bob
+2|gopinder@foo.com
+3|farook@bar.com
+4|vitalik@baz.com
+
+INSERT INTO votes (user_id, item_id, ordinal)
+VALUES ("1", "1", "1");
+
+INSERT INTO votes (user_id, item_id, ordinal)
+VALUES ("2", "1", "2");
+
+INSERT INTO votes (user_id, item_id, ordinal)
+VALUES ("3", "2", "1");
+
+
+
+
+
+
+
+
+
