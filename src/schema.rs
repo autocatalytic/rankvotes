@@ -98,9 +98,9 @@ impl NewUser {
 impl Item {
     pub fn for_user(uid: i32, conn: &SqliteConnection) -> Vec<(Item, Option<i32>)> {
         //
-	// Debug - can we pull records from the DB?
+	    // Debug - can we pull records from the DB?
         // 
-        eprintln!("{:?}", all_items.load::<Item>(conn).unwrap());
+        //eprintln!("{:?}", all_items.load::<Item>(conn).unwrap());
         
         all_items
             .left_join(
@@ -133,7 +133,8 @@ impl Vote {
             .map(|(_, ballot)| ballot.into_iter().map(|v| v.item_id).collect())
             .collect();
         
-        eprintln!("{:?}", votes);
+        // Debug
+        // eprintln!("{:?}", votes);
             
         match rcir::run_election(&votes, rcir::MajorityMode::RemainingMajority).ok()? {
             rcir::ElectionResult::Winner(&iid) => {
